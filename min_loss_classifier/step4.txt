@@ -1,0 +1,10 @@
+Comments:
+1.	The stability of Maximum margin classifier is expected, as there are very few hyper-planes satisfying the constraint of separation with max-margin.
+	In most of the cases, there is a unique hyper-plane satisfying this(max margin, separation) constraints. 
+	As the objective function of MMLC guarantees convergence to this very small set of hyperplanes , we get approx same hyper-planes with less changes in their orientation.
+
+2.	Perceptron converges on any hyper-plane which separates the data-set, the algorithm as a result can converge to more hyper-planes than MMLC.
+	Hence it is less stable than MMLC, due to convergence to a very differently oriented hyper-plane each time than before.
+
+3.	The Perceptron's Hyper-planes oscillates about the Bayes optimal, this is obvious as Bayes Optimal is the ideal answer => Bayes optimal achieves best possible data-separation.
+	Therefore there cannot be drastic difference between Perceptron's hyper-planes and Bayes Optimal's answer.

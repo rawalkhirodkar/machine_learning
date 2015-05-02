@@ -1,0 +1,21 @@
+Liblinear:
+Objective value = -897.099588
+accuracy = 35.2865%
+
+To do 1: sm->sizePsi= sparm->num_features * sparm->num_classes ;
+To do 2: if((bestscore<score)  || (first)) {
+      bestscore=score;
+      bestclass=class;
+      first=0;
+    }
+    
+MY code:
+$ ./svm_multiclass_classify example4/test.dat example4/model 
+Reading model... (22 support vectors read) done.
+Reading test examples..Scanning examples...done
+Reading examples into memory...100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..OK. (2000 examples read)
+ (2000 examples) done.
+Classifying test examples..100..200..300..400..500..600..700..800..900..1000..1100..1200..1300..1400..1500..1600..1700..1800..1900..2000..done
+Runtime (without IO) in cpu-seconds: 0.00
+Average loss on test set: 32.8000
+Zero/one-error on test set: 32.80% (1344 correct, 656 incorrect, 2000 total)

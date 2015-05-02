@@ -1,0 +1,12 @@
+Observations:
+
+Time taken by Planar Data = 1.2080 sec
+Time taken by Fuzzy Data = 1.1212 sec
+
+Thus there is an increase of 7.7% time-wise wrt to fuzzy data in planar data.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+In case of Planar data, all points happen to be support-vectors, as they lie on the margin => The co-efficients alpha's (of yi times feature vectors) are all non-zero.
+As a result we need to do more of number of computations, as the number of unknowns to be calculated is more for convergence.
+
+For example in case of Gradient descent, more non-zero alpha's implies more number of iterations for the algo to convergence.
+In case of Active-set method, more non-zero alpha's mean more number of active variables seen by the algo, hence more number of iterations to converge.

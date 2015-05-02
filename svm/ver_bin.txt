@@ -1,0 +1,8 @@
+For my code (Co-ordinate descent):
+accuracy = 31.5104%
+objective_value = 514.9
+
+
+Liblinear
+Objective value = -23.562970
+Accuracy = 50.65%
